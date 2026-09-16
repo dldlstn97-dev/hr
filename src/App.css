@@ -220,7 +220,7 @@
     align-items: center;
     gap: 6px;
   }
-  .btn-primary { background: var(--ledger); color: #fff; }
+  .btn-primary { background: var(--ledger); color: #000; }
   .btn-primary:hover { background: var(--ledger-dark); }
   .btn-ghost { background: transparent; color: var(--ink-soft); border: 1px solid var(--line); }
   .btn-ghost:hover { background: var(--paper); }
