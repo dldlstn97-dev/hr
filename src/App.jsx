@@ -15,9 +15,19 @@ import StaffAdmin from "./components/StaffAdmin";
 import { useHrStore } from "./hooks/useHrStore";
 import { todayStr } from "./utils/leave";
 
+const DEPARTMENTS = [
+  { key: "개발팀", label: "개발팀" },
+  { key: "인사팀", label: "인사팀" },
+  { key: "재무팀", label: "재무팀" },
+  { key: "영업팀", label: "영업팀" },
+  { key: "기획팀", label: "기획팀" },
+];
+
 function Onboarding({ saveEmployees, setCurrentUserId }) {
+
+  
   const [name, setName] = useState("");
-  const [dept, setDept] = useState("");
+  const [dept, setDept] = useState(DEPARTMENTS[0].key);
   const [join, setJoin] = useState(todayStr());
 
   async function submit() {
@@ -49,7 +59,13 @@ function Onboarding({ saveEmployees, setCurrentUserId }) {
           </div>
           <div className="field">
             <label>부서</label>
-            <input placeholder="예: 인사팀" value={dept} onChange={(e) => setDept(e.target.value)} />
+            <select value={dept} onChange={(e) => setDept(e.target.value)}>
+              {DEPARTMENTS.map((d) => (
+                <option key={d.key} value={d.key}>
+                  {d.label}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
         <div className="form-row">
