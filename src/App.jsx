@@ -49,9 +49,6 @@ function Onboarding({ saveEmployees, setCurrentUserId }) {
         <div className="page-title" style={{ marginBottom: 6 }}>
           근태 대장 시작하기
         </div>
-        <div className="page-desc" style={{ marginBottom: 18 }}>
-          첫 번째 관리자 계정을 등록하고 시작하세요. 이후 직원 관리 화면에서 팀원을 추가할 수 있습니다.
-        </div>
         <div className="form-row">
           <div className="field">
             <label>이름</label>
