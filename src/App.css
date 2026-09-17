@@ -468,7 +468,7 @@
 
   }
 
-  .btn-primary { background: var(--ledger); color: #000; }
+  .btn-primary { background: var(--ledger); color: #000; textAlign: center;}
 
   .btn-primary:hover { background: var(--ledger-dark); }
 
