@@ -72,7 +72,7 @@ function Onboarding({ saveEmployees, setCurrentUserId }) {
             <input type="date" value={join} onChange={(e) => setJoin(e.target.value)} />
           </div>
         </div>
-        <button className="btn btn-primary" onClick={submit}>
+        <button className="btn btn-primary" onClick={submit} style={{textAlign: center}}>
           관리자로 시작하기
         </button>
       </div>
