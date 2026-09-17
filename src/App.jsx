@@ -36,30 +36,23 @@ function Onboarding({ saveEmployees, setCurrentUserId }) {
   return (
     <div className="onboard-box">
       <div className="card">
-        <div className="page-title" style={{ marginBottom: 6 }}>
-          근태 대장 시작하기
-        </div>
-        <div className="page-desc" style={{ marginBottom: 18 }}>
-          첫 번째 관리자 계정을 등록하고 시작하세요. 이후 직원 관리 화면에서 팀원을 추가할 수 있습니다.
+        <div className="page-title" style={{ marginBottom: 6, textAlign : "center" }}>
+          로그인
         </div>
         <div className="form-row">
           <div className="field">
-            <label>이름</label>
-            <input placeholder="홍길동" value={name} onChange={(e) => setName(e.target.value)} />
-          </div>
-          <div className="field">
-            <label>부서</label>
-            <input placeholder="예: 인사팀" value={dept} onChange={(e) => setDept(e.target.value)} />
+            <label>ID</label>
+            <input placeholder="ID" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
         </div>
         <div className="form-row">
           <div className="field">
-            <label>입사일</label>
-            <input type="date" value={join} onChange={(e) => setJoin(e.target.value)} />
+            <label>PW</label>
+            <input placeholder="PW" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
         </div>
         <button className="btn btn-primary" onClick={submit}>
-          관리자로 시작하기
+          LOGIN
         </button>
       </div>
     </div>
