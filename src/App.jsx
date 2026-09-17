@@ -49,6 +49,7 @@ function Onboarding({ saveEmployees, setCurrentUserId }) {
         <div className="page-title" style={{ marginBottom: 6 }}>
           근태 대장 시작하기
         </div>
+      <br></br>
         <div className="form-row">
           <div className="field">
             <label>이름</label>
